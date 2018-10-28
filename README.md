@@ -1,9 +1,9 @@
-Fortune's Told
+Fortunes Told
 --------
 
 
 
-### Running Fortune's Told locally
+### Running Fortunes Told locally
 
 Clone this repo:
 ```
@@ -21,7 +21,7 @@ Install the dependencies:
 > pip install -r requirements.txt
 ```
 
-Ensure your keys are running in your virtual env:
+Ensure your keys are set in your virtual env:
 ```
 > source secrets.sh
 ```
@@ -31,4 +31,4 @@ Start the app:
 > python server.py
 ```
 
-Go to http://localhost:5000 in your browser to have your fortune's told! 
+Go to http://localhost:5000 in your browser to have your fortunes told! 
