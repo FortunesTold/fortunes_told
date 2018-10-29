@@ -1,0 +1,84 @@
+body {
+    background: rgb(89,88,88);
+  background: radial-gradient(circle, rgba(89,88,88,1) 0%, rgba(0,4,8,1) 100%);
+}
+
+#ball {
+    animation: BALL-STILL 10s infinite;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+#ball:hover {
+    background-image: linear-gradient(to right, #d6d1d9, #cbcae5, #afc8f2, #7ec9f9, #0ecbf5);
+}
+
+#stand {
+    background: rgb(3,29,74);
+    background: linear-gradient(0deg, rgba(3,29,74,1) 0%, rgba(88,133,194,1) 100%);
+    height: 30px;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 80px 80px 10px 10px;
+    border: 3px solid black;
+    transform: scaleY(2);
+}
+
+/* this will be changed when the ball is on hover for the stand to shine brigher too
+    background: rgb(3,29,74);
+background: linear-gradient(0deg, rgba(3,29,74,1) 0%, rgba(151,174,204,1) 100%); */
+
+@keyframes BALL-CHANGE {
+    
+    0% {
+     background-image: linear-gradient(to right top, #d6d1d9, #cbcae5, #afc8f2, #7ec9f9, #0ecbf5);
+    }
+/*  20% {
+        background-image: linear-gradient(to right bottom, #7e92e8, #a285d8, #bc79c2, #cc6fa9, #d3698e);
+      } */
+    30% {
+      background-image: linear-gradient(to left bottom, #d6d1d9, #cbcae5, #afc8f2, #7ec9f9, #0ecbf5);
+    }
+/*  50% {
+        background-image: linear-gradient(to right bottom, #9caca7, #4c8c92, #00688f, #004089, #060868);
+    } */
+    60% {
+      background-image: linear-gradient(to top, #d6d1d9, #cbcae5, #afc8f2, #7ec9f9, #0ecbf5);
+    }
+/*  70% {
+        background-image: linear-gradient(to left top, #dbeb09, #f1c000, #fd9200, #fe5f13, #f31436);
+    } */
+    100% {
+     background-image: linear-gradient(to right bottom, #d6d1d9, #cbcae5, #afc8f2, #7ec9f9, #0ecbf5);
+    }
+}
+#ball:hover {
+     animation: BALL-CHANGE 0.25s infinite;
+}
+
+@keyframes BALL-STILL {
+    
+    0% {
+        background-image: linear-gradient(to bottom, #d4b8e3, #b28dc4, #9064a6, #703b88, #4f0e6a);
+    }   
+    20% {
+        background-image: linear-gradient(to right bottom, #d4b8e3, #b28dc4, #9064a6, #703b88, #4f0e6a);
+    }
+    40% {
+        background-image: linear-gradient(to right top, #d4b8e3, #b28dc4, #9064a6, #703b88, #4f0e6a);
+    }
+    60% {
+        background-image: linear-gradient(to left bottom, #d4b8e3, #b28dc4, #9064a6, #703b88, #4f0e6a);
+    }
+    
+    80% {
+        background-image: linear-gradient(to right, #d4b8e3, #b28dc4, #9064a6, #703b88, #4f0e6a);
+    }
+    100% {
+        background-image: linear-gradient(to bottom, #d4b8e3, #b28dc4, #9064a6, #703b88, #4f0e6a);
+    }
+}
+    
+    
