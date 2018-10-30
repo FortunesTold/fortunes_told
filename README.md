@@ -1,7 +1,7 @@
 Fortunes Told
 --------
 
-
+![](http://g.recordit.co/ddnkBfxiya.gif)
 
 ### Running Fortunes Told locally
 
